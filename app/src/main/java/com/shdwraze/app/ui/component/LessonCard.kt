@@ -33,9 +33,9 @@ fun LessonCard(
             .padding(start = 8.dp, top = 16.dp, end = 8.dp),
         colors = CardDefaults.cardColors(
             containerColor = when (lesson.type) {
-                "Лк" -> Color(0xFFFFF2C5)
-                "Лб" -> Color(0xFFE2C5FF)
-                else -> Color(0xFFD4FFC5)
+                "Лк" -> MaterialTheme.colorScheme.primaryContainer
+                "Лб" -> MaterialTheme.colorScheme.secondaryContainer
+                else -> MaterialTheme.colorScheme.tertiaryContainer
             }
         )
     ) {
