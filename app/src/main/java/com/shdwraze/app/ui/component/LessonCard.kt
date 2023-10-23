@@ -30,7 +30,7 @@ fun LessonCard(
         modifier = modifier
             .fillMaxWidth()
             .height(125.dp)
-            .padding(start = 16.dp, top = 16.dp, end = 16.dp),
+            .padding(start = 8.dp, top = 16.dp, end = 8.dp),
         colors = CardDefaults.cardColors(
             containerColor = when (lesson.type) {
                 "Лк" -> Color(0xFFFFF2C5)
