@@ -1,6 +1,6 @@
-package com.shdwraze.app.ui.screen
+package com.shdwraze.notgoing.ui.screen
 
-import com.shdwraze.app.network.Lesson
+import com.shdwraze.notgoing.network.Lesson
 
 sealed interface ScheduleUiState {
     data class Success(val schedule: List<Lesson>) : ScheduleUiState

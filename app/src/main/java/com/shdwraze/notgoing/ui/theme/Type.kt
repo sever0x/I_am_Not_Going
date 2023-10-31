@@ -1,4 +1,4 @@
-package com.shdwraze.app.ui.theme
+package com.shdwraze.notgoing.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
@@ -18,8 +18,8 @@ val Typography = Typography(
 
     bodyMedium = TextStyle(
         fontFamily = FontFamily.Default,
-        fontSize = 12.sp,
-        lineHeight = 12.sp,
+        fontSize = 14.sp,
+        lineHeight = 16.sp,
         fontWeight = FontWeight(400),
     ),
 

@@ -1,4 +1,4 @@
-package com.shdwraze.app.network
+package com.shdwraze.notgoing.network
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

@@ -1,4 +1,4 @@
-package com.shdwraze.app
+package com.shdwraze.notgoing
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.shdwraze.app
+package com.shdwraze.notgoing
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

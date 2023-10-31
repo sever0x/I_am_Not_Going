@@ -1,4 +1,4 @@
-package com.shdwraze.app.ui.theme
+package com.shdwraze.notgoing.ui.theme
 
 import android.app.Activity
 import android.os.Build

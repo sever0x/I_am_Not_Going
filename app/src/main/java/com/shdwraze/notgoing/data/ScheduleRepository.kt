@@ -1,7 +1,7 @@
-package com.shdwraze.app.data
+package com.shdwraze.notgoing.data
 
-import com.shdwraze.app.network.Lesson
-import com.shdwraze.app.network.ScheduleApiService
+import com.shdwraze.notgoing.network.Lesson
+import com.shdwraze.notgoing.network.ScheduleApiService
 
 interface ScheduleRepository {
     suspend fun getSchedule(startTime: Long, endTime: Long): List<Lesson>

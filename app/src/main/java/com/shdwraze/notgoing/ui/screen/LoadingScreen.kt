@@ -1,4 +1,4 @@
-package com.shdwraze.app.ui.screen
+package com.shdwraze.notgoing.ui.screen
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.LinearOutSlowInEasing

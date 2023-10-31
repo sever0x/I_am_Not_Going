@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.shdwraze.app"
+    namespace = "com.shdwraze.notgoing"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.shdwraze.app"
+        applicationId = "com.shdwraze.notgoing"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

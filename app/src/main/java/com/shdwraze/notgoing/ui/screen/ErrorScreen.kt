@@ -1,4 +1,4 @@
-package com.shdwraze.app.ui.screen
+package com.shdwraze.notgoing.ui.screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -10,7 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.shdwraze.app.R
+import com.shdwraze.notgoing.R
 
 @Composable
 fun ErrorScreen(modifier: Modifier = Modifier) {

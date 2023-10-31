@@ -1,11 +1,11 @@
-package com.shdwraze.app.ui.screen
+package com.shdwraze.notgoing.ui.screen
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.shdwraze.app.data.ScheduleRepository
+import com.shdwraze.notgoing.data.ScheduleRepository
 import kotlinx.coroutines.launch
 import java.io.IOException
 import java.time.LocalDate

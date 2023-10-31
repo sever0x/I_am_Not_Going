@@ -1,10 +1,10 @@
-package com.shdwraze.app
+package com.shdwraze.notgoing
 
 import android.app.Application
-import com.shdwraze.app.data.AppContainer
-import com.shdwraze.app.data.DefaultAppContainer
+import com.shdwraze.notgoing.data.AppContainer
+import com.shdwraze.notgoing.data.DefaultAppContainer
 
-class App : Application() {
+class IamNotGoingApp : Application() {
 
     lateinit var container: AppContainer
 

@@ -1,4 +1,4 @@
-package com.shdwraze.app.ui.theme
+package com.shdwraze.notgoing.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

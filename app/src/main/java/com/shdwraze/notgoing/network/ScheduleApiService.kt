@@ -1,4 +1,4 @@
-package com.shdwraze.app.network
+package com.shdwraze.notgoing.network
 
 import retrofit2.http.GET
 import retrofit2.http.Query

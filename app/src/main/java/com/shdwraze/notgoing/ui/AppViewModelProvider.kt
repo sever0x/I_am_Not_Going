@@ -1,11 +1,11 @@
-package com.shdwraze.app.ui
+package com.shdwraze.notgoing.ui
 
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.APPLICATION_KEY
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
-import com.shdwraze.app.App
-import com.shdwraze.app.ui.screen.ScheduleViewModel
+import com.shdwraze.notgoing.IamNotGoingApp
+import com.shdwraze.notgoing.ui.screen.ScheduleViewModel
 
 object AppViewModelProvider {
     val Factory = viewModelFactory {
@@ -15,5 +15,5 @@ object AppViewModelProvider {
     }
 }
 
-fun CreationExtras.scheduleApplication(): App =
-    (this[APPLICATION_KEY] as App)
+fun CreationExtras.scheduleApplication(): IamNotGoingApp =
+    (this[APPLICATION_KEY] as IamNotGoingApp)
