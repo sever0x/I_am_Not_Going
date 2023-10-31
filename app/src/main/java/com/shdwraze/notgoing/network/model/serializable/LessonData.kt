@@ -1,16 +1,16 @@
-package com.shdwraze.notgoing.network
+package com.shdwraze.notgoing.network.model.serializable
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Lesson(
+data class LessonData(
     @SerialName("start_time")
     val startTime: Long,
     @SerialName("end_time")
     val endTime: Long,
     val type: String,
-    val teachers: List<Teacher>,
+    val teachers: List<Teacher>?,
     val subject: Subject
 )
 

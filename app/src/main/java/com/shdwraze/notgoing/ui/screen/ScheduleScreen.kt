@@ -36,8 +36,8 @@ fun ScheduleScreen(
         ) {
             when (val scheduleUiState = scheduleViewModel.scheduleUiState) {
                 is ScheduleUiState.Success -> LessonList(lessons =
-                scheduleUiState.schedule.sortedBy {
-                    it.startTime
+                    scheduleUiState.schedule.sortedBy { lesson ->
+                        lesson.startTime
                 })
 
                 is ScheduleUiState.Loading -> LoadingScreen(modifier = modifier.fillMaxSize())
