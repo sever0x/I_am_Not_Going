@@ -5,14 +5,14 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.shdwraze.notgoing.data.ScheduleRepository
+import com.shdwraze.notgoing.data.repository.api.ScheduleApiRepository
 import kotlinx.coroutines.launch
 import java.io.IOException
 import java.time.LocalDate
 import java.time.ZoneId
 
 class ScheduleViewModel(
-    private val scheduleRepository: ScheduleRepository
+    private val scheduleApiRepository: ScheduleApiRepository
 ) : ViewModel() {
 
     var scheduleUiState: ScheduleUiState by mutableStateOf(ScheduleUiState.Loading)
@@ -26,7 +26,7 @@ class ScheduleViewModel(
         viewModelScope.launch {
             scheduleUiState = try {
                 ScheduleUiState.Success(
-                    scheduleRepository.getSchedule(
+                    scheduleApiRepository.getSchedule(
                         getStartTime(),
                         getEndTime()
                     )

@@ -1,6 +1,6 @@
 package com.shdwraze.notgoing.network
 
-import com.shdwraze.notgoing.network.model.serializable.LessonData
+import com.shdwraze.notgoing.network.model.LessonData
 import retrofit2.http.GET
 import retrofit2.http.Query
 

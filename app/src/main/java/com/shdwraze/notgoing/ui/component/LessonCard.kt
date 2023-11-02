@@ -21,7 +21,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.shdwraze.notgoing.network.model.entity.Lesson
+import com.shdwraze.notgoing.data.entity.Lesson
 import com.shdwraze.notgoing.ui.theme.ImNotGoingTheme
 import java.util.Date
 
@@ -100,7 +100,8 @@ val testLesson = Lesson(
     type = "Лк",
     teacher = "Іванов І.І.",
     subjectBrief = "ОПК",
-    subjectFull = "Основи програмування Kotlin"
+    subjectFull = "Основи програмування Kotlin",
+    scheduleId = 0
 )
 
 @Preview(showBackground = true)
