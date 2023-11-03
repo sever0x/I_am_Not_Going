@@ -10,7 +10,11 @@ import com.shdwraze.notgoing.ui.screen.ScheduleViewModel
 object AppViewModelProvider {
     val Factory = viewModelFactory {
         initializer {
-            ScheduleViewModel(scheduleApplication().container.scheduleApiRepository)
+            ScheduleViewModel(
+                scheduleApplication().container.scheduleApiRepository,
+                scheduleApplication().container.scheduleDatabaseRepository,
+                scheduleApplication().container.lessonDatabaseRepository
+            )
         }
     }
 }

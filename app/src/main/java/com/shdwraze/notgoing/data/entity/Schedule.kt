@@ -1,9 +1,7 @@
 package com.shdwraze.notgoing.data.entity
 
-import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import androidx.room.Relation
 import java.time.LocalDate
 
 @Entity(tableName = "schedule")
