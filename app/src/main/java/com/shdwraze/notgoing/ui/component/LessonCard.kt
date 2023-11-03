@@ -7,8 +7,6 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
@@ -23,9 +21,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.shdwraze.notgoing.network.Lesson
-import com.shdwraze.notgoing.network.Subject
-import com.shdwraze.notgoing.network.Teacher
+import com.shdwraze.notgoing.data.entity.Lesson
 import com.shdwraze.notgoing.ui.theme.ImNotGoingTheme
 import java.util.Date
 
@@ -68,12 +64,12 @@ fun LessonCard(
                 }
                 Spacer(modifier = Modifier.size(8.dp))
                 Text(
-                    text = lesson.subject.title,
+                    text = lesson.subjectFull,
                     style = MaterialTheme.typography.titleLarge
                 )
                 Spacer(modifier = Modifier.size(4.dp))
                 Text(
-                    text = lesson.teachers[0].shortName,
+                    text = lesson.teacher ?: "Н/д",
                     style = MaterialTheme.typography.bodyMedium
                 )
             }
@@ -82,7 +78,7 @@ fun LessonCard(
                 contentAlignment = Alignment.BottomStart
             ) {
                 Text(
-                    text = lesson.subject.brief,
+                    text = lesson.subjectBrief,
                     style = MaterialTheme.typography.labelSmall,
                     modifier = Modifier.padding(bottom = 4.dp)
                 )
@@ -102,8 +98,10 @@ val testLesson = Lesson(
     startTime = 1635680400000, // 31 октября 2023 года, 13:00 по GMT
     endTime = 1635684000000, // 31 октября 2023 года, 14:00 по GMT
     type = "Лк",
-    teachers = listOf(Teacher(shortName = "Іванов І.І.")),
-    subject = Subject(brief = "ОПК", title = "Основи програмування Kotlin")
+    teacher = "Іванов І.І.",
+    subjectBrief = "ОПК",
+    subjectFull = "Основи програмування Kotlin",
+    scheduleId = 0
 )
 
 @Preview(showBackground = true)
